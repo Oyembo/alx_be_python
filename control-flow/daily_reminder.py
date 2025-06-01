@@ -10,4 +10,6 @@ match priority:
     print ("Schedule task for completion")
 if priority == "high":
     print("Reminder, task require immediate attention today")
+if time_bound_str == Yes
+    print (Reminder, task has deadline, give attention immediately")
 
