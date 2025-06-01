@@ -11,7 +11,7 @@ match priority:
     print ("Schedule task for completion")
 if priority == "high":
     print("Finish project report' is a high priority task that requires immediate attention today!")
-if time_bound_str == "yes":
+if time_bound == "yes":
     print ("This high-priority task is also time-bound, act now!")
     case_:
     print ("No attention required")
