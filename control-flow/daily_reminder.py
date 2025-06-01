@@ -1,7 +1,6 @@
 task = input("Enter your task: ")
 priority = input("Priority (high, medium, low): ")
-time_bound_str = input("Is it time-bound (Yes/No): ") #Respond with Yes or No
-
+time_bound_str = input("Is it time-bound? (Yes/No): ") #Respond with Yes or No
 match priority:
     case "high":
     print("Finish this task first")
