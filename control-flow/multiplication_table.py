@@ -4,4 +4,5 @@ for i in range (1, 11)
     Y = i
     Z = X * Y
     print("{X} * {Y} = {Z}")
+    print()
     i += 1
