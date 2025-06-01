@@ -3,6 +3,5 @@ for i in range (1, 11)
     X = number
     Y = i
     Z = X * Y
-    print("{X} * {Y} = {Z}")
-    print()
+    print(f"{X} * {Y} = {Z}")
     i += 1
