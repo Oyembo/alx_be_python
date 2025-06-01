@@ -8,8 +8,8 @@ match priority:
     print("Finish task soon")
     case "low":
     print ("Schedule task for completion")
-if priority == "high":
-    print("Reminder, task require immediate attention today")
-if time_bound_str == Yes
+if priority = "high":
+    print("Finish project report' is a high priority task that requires immediate attention today!")
+if time_bound_str = Yes
     print (Reminder, task has deadline, give attention immediately")
 
