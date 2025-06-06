@@ -33,10 +33,12 @@ def main():
     Main function to handle user interaction for temperature conversion.
     """
     try:
-        temp_input = input("Enter the temperature value: ")
+        # Changed prompt to match the exact requirement
+        temp_input = input("Enter the temperature to convert: ")
         temperature = float(temp_input) # Attempt to convert input to float
 
-        unit = input("Enter the unit (C for Celsius, F for Fahrenheit): ").strip().upper()
+        # Changed prompt to match the exact requirement
+        unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
         if unit == 'F':
             converted_temp = convert_to_celsius(temperature)
