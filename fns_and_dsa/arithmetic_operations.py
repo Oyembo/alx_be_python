@@ -1,4 +1,4 @@
-def perform_operation (num1, num2, operation):
+def perform_operation (num1, num2, operation) :
     """Performs a basic arithmetic operation on two numbers"""
 
     num1 = float(input("Enter the first number: "))
