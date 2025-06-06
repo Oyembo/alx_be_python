@@ -1,4 +1,4 @@
-def perform_operation:
+def perform_operation (operation):
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
     operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
