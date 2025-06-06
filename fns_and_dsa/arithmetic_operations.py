@@ -1,20 +1,16 @@
-def perform_operation(num1: float, num2: float, operation: str):
-    """
-    Performs a basic arithmetic operation on two numbers.
+def perform_operation(num1, num2, operation):
+    """ Performs a basic arithmetic operation on two numbers."""
 
-    Args:
-        num1 (float): The first number.
-        num2 (float): The second number.
-        operation (str): The operation to perform ('add', 'subtract', 'multiply', 'divide').
+def main ():
+    print("Arithmetic Operations")
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    operation = input("Enter the operation (add, subtract, multiply, divide)").strip().lower()
 
-    Returns:
-        float: The result of the arithmetic operation if successful.
-        str: A specific error message "Error: Cannot divide by zero!" if division by zero is attempted.
+    result = perform_operation(num1, num2, operation)
+    print(f"Result: {result}")
 
-    Raises:
-        ValueError: If an invalid operation string is provided.
-    """
-    if operation == 'add':
+       if operation == 'add':
         return num1 + num2
     elif operation == 'subtract':
         return num1 - num2
