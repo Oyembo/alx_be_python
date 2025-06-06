@@ -13,7 +13,7 @@ def calculate_future_date():
     and prints it in "YYYY-MM-DD" format. Handles invalid input for the number of days.
     """
     try:
-        num_days_str = input("Enter the number of days to add to the current date (integer): ")
+        num_days_str = input("Enter the number of days to add to the current date: ")
         num_days = int(num_days_str)
     except ValueError:
         print("Invalid input. Please enter a whole number (integer) for the number of days.")
