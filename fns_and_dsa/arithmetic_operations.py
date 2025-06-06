@@ -1,22 +1,29 @@
-def perform_operation (num1, num2, operation) :
-    """Performs a basic arithmetic operation on two numbers"""
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
-    operation = input("Enter the operation (add, subtract, multiply, divide): ")
+def perform_operation(num1: float, num2: float, operation: str):
+    """
+    Performs a basic arithmetic operation on two numbers.
 
-if operation == "add":
-    return num1 + num2
-elif operation == "subtract":
-    return num1 - num2
-elif operation == "multiply":
-    return num1 * num2
-elif operation == "divide":
-    return num1 / num2
-    if num2 == 0
-       return "Error: Cannot divide by zero!"
+    Args:
+        num1 (float): The first number.
+        num2 (float): The second number.
+        operation (str): The operation to perform ('add', 'subtract', 'multiply', 'divide').
 
-    result = operation
-    print(f"Result: {result}")
+    Returns:
+        float: The result of the arithmetic operation if successful.
+        str: A specific error message "Error: Cannot divide by zero!" if division by zero is attempted.
 
-if __name__ == "__main__":
-    main()
+    Raises:
+        ValueError: If an invalid operation string is provided.
+    """
+    if operation == 'add':
+        return num1 + num2
+    elif operation == 'subtract':
+        return num1 - num2
+    elif operation == 'multiply':
+        return num1 * num2
+    elif operation == 'divide':
+        if num2 == 0:
+            return "Error: Cannot divide by zero!"
+        return num1 / num2
+    else:
+        # Raise a ValueError for unsupported operations
+        raise ValueError("Invalid operation. Please choose from 'add', 'subtract', 'multiply', 'divide'.")
