@@ -1,18 +1,25 @@
+def display_menu():
+    """
+    Displays the shopping list menu options to the user.
+    """
+    print("\n--- Shopping List Menu ---")
+    print("1. Add item")
+    print("2. Remove item")
+    print("3. View list")
+    print("4. Exit")
+
 def main():
     shopping_list = []
 
-    while True:
-        print("\n--- Shopping List Menu ---")
-        print("1. Add item")
-        print("2. Remove item")
-        print("3. View list")
-        print("4. Exit")
+    print("Shopping List Manager") # This addresses the missing print statement
 
-        choice = input("Enter your choice (1-4): ")
+    while True:
+        display_menu() # Call the new display_menu function
+        choice = input("Enter your choice (1-4): ").strip()
 
         if choice == '1':
             item = input("Enter the item to add: ").strip()
-            if item: # Ensure item is not empty
+            if item:
                 shopping_list.append(item)
                 print(f"'{item}' added to the list.")
             else:
@@ -36,10 +43,11 @@ def main():
                 for i, item in enumerate(shopping_list, 1):
                     print(f"{i}. {item}")
         elif choice == '4':
-            print("Exiting the shopping list application. Goodbye!")
+            print("Exiting the Shopping List Manager. Goodbye!")
             break
         else:
             print("Invalid choice. Please enter a number between 1 and 4.")
 
 if __name__ == "__main__":
     main()
+
