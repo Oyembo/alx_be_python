@@ -1,4 +1,6 @@
-def perform_operation (operation):
+def perform_operation (num1, num2, operation):
+    """ Performs a basic arithmetic operation on two numbers"""
+    
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
     add = num1 + num2
