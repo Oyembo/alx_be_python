@@ -5,6 +5,12 @@ class Book:
         self.check_out = check_out
         self.return_book = return_book, True
         self._is_checked_out = False
+    def check_out(self):
+        """Marks the book as checked out."""
+        self._is_checked_out = True
+    def return_book(self): 
+        """Marks the book as returned/available."""
+        self._is_checked_out = False
 class Library:
     def __init__(self):
         self._book = []
