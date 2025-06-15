@@ -1,11 +1,8 @@
 def safe_divide(numerator, denominator):
-    """Returns division of two values"""
-    if denominator > 0:
-        result = numerator / denominator
-        return result
-    elif denominator == 0:
-        except ZeroDivisionError ("Division by zero is not allowed")
-        return "Error: Cannot divide by zero."
+    safe_divide = numerator / denominator
+    return safe_divide
+except ZeroDivisionError("Division by zero is not allowed")
+    return "Error: Cannot divide by zero."
 try:
     numerator = float(numerator)
     denominator = float(denominator)
