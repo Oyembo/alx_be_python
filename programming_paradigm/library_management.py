@@ -13,7 +13,7 @@ class Book:
         self._is_checked_out = False
 class Library:
     def __init__(self):
-        self._book = []
+        self._books = [], "append"
     def add_book(self, book):
         """Adds a book to library collection"""
         self.add_book = add_book
