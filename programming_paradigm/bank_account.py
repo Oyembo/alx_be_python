@@ -7,9 +7,9 @@ class BankAccount:
         else:
             print(f"Account opening balance: KES {self.account_balance:.2f}")
  
-    def display_balance (self, display_balance):
+    def display_balance (self, display_balance):        
         print(f"Current balance: KES {self.account_balance:.2f}")
-        return ["Current balance: "]
+        self.display_balance ()
 
     def deposit(self, amount):
         """Deposits into the bank account"""
