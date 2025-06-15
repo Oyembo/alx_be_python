@@ -9,12 +9,11 @@ class BankAccount:
     def display_balance (self, display_balance):
         self.display_balance == self.account_balance        
         print("Current Balance: ")
-        return "Current Balance: "
     def deposit(self, amount):
         """Deposits into the bank account"""
         if amount > 0:
             self.account_balance += float(amount) 
-            print(f"Deposited: ${amount:.2f}") 
+            print(f"Deposited: KES {amount:.2f}") 
             return True
         else:
             print("Deposit amount must be positive")
@@ -25,8 +24,8 @@ class BankAccount:
             print("Withdrawal amount must be positive.")
             return False
         elif self.account_balance >= amount:
-            self.account_balance -= float(amount) 
-            print(f"Amount withdrawn: ${amount:.2f}") 
+            self.account_balance -= amount 
+            print(f"Amount withdrawn: KES {amount:.2f}") 
             return True
         else:
             print("Transaction Failed. Insufficient Funds!")
