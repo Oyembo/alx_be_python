@@ -6,12 +6,10 @@ class BankAccount:
             self.account_balance = 0
         else:
             print(f"Account opening balance: KES {self.account_balance:.2f}")
- 
     def display_balance (self, display_balance):
         self.display_balance == self.account_balance        
         print("Current balance: ")
         self.display_balance ()
-
     def deposit(self, amount):
         """Deposits into the bank account"""
         if amount > 0:
@@ -21,7 +19,6 @@ class BankAccount:
         else:
             print("Deposit amount must be positive")
             return False
-
     def withdraw(self, amount):
         """Withdraws specified ammount from bank account"""
         if amount <= 0:
