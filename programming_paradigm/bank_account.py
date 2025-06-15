@@ -8,11 +8,6 @@ class BankAccount:
             print(f"Account opening balance: KES {self.account_balance:.2f}")
  
 
-    def display_balance (self, display_balance):
-        """Displays the existing account balance"""
-        self.display_balance = self.account_balance
-        print("Current balance:")
-
     def deposit(self, amount):
         """Deposits into the bank account"""
         if amount > 0:
@@ -30,6 +25,11 @@ class BankAccount:
         else:
             print("Transcation Failed. Insufficient Funds!")
             self.display_balance()
+
+    def display_balance (self, display_balance):
+        """Displays the existing account balance"""
+        self.display_balance = self.account_balance
+        print(f"Current balance: KES {self.account_balance:.2f}")
 
 
         
