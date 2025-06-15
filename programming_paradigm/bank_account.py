@@ -8,8 +8,8 @@ class BankAccount:
             print(f"Account opening balance: KES {self.account_balance:.2f}")
     def display_balance (self, display_balance):
         self.display_balance == self.account_balance        
-        print("Current balance: ")
-        self.display_balance ()
+        print("Current Balance: ")
+        return "Current Balance: "
     def deposit(self, amount):
         """Deposits into the bank account"""
         if amount > 0:
