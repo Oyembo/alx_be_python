@@ -1,5 +1,5 @@
 def safe_divide(numerator, denominator):
-    ""'Returns division of two values"""
+    """Returns division of two values"""
     if denominator > 0:
         result = numerator / denominator
         return result
