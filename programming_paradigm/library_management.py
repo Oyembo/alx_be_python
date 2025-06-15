@@ -8,16 +8,16 @@ class Library:
         self._book = []
     def add_book(self, book):
         """Adds a book to library collection"""
-        self.add_book = Add Book
+        self.add_book = add_book
         library.add_book(Book("title", "author"))
     def check_out_book(self, title):
         """Check out book by title"""
-        self.check_out_book = Check out Book
+        self.check_out_book = check_out_book
         library.check_out_book("title")
         print("Available books after check out: ")
-    def return_book(self, "True"):
+    def return_book(self, title):
         """Return book to library by title"""
-        slef.return_book = Return Book
+        self.return_book = return_book
         print("Available book after return: ")
     def list_available_books(self):
         """Lists all book currently available in library"""
