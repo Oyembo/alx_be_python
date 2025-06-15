@@ -1,5 +1,7 @@
 def safe_divide(numerator, denominator):
     """Performs division and handle any errors"""
+    result = numerator / denominator
+    return result
 try:
     numerator = float(numerator)
     denominator = float(denominator)
