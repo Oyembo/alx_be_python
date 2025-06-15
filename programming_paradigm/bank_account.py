@@ -9,6 +9,7 @@ class BankAccount:
  
     def display_balance (self, display_balance):
         print(f"Current balance: KES {self.account_balance:.2f}")
+        return ["Current balance: "]
 
     def deposit(self, amount):
         """Deposits into the bank account"""
