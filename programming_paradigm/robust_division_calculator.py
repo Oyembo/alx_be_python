@@ -5,13 +5,13 @@ def safe_divide(numerator, denominator):
         return result
     elif denominator == 0:
         raise ZeroDivisionError ("Division by zero is not allowed")
-    return "Division by zero is not allowed"
+    return "Error: Cannot divide by zero."
 
 try:
     numerator = float(numerator)
     denominator = float(denominator)
     if denominator == 0:
-        return "Division by zero is not allowed"
+        return "Error: Cannot divide by zero."
         except ValueError:
             return "Please enter numeric values only"
     
