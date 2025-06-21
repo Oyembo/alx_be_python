@@ -34,7 +34,8 @@ class Library:
     def list_books(self):
         if not self.books:
             print("The library is currently empty.")
-        
+Library = Book()
+
     
         
 
