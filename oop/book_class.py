@@ -7,7 +7,7 @@ class Book:
     def ___str__(self):
         return f"Title {self.title}, by Author:{self.author}, Year:{self.year}"
         my_book = Book("Title", "Author", "Year")
-         print("my_book")
+        print("my_book")
 
     def __repr__(self):
         return f"Book('{self.title}', '{self.author}', {self.year})"
