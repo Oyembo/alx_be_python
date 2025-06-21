@@ -17,7 +17,7 @@ class Book:
     def __del__(self):
         return f"Book('{self.title}', '{self.author}', {self.year})"
         my_book = Book("title", "author", "year")
-        del my_book
+        del 'my_book'
         print(f"Deleting {self.title}")
     
 
