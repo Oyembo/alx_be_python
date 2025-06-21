@@ -8,6 +8,7 @@ class Book:
         Returns a human-readable string representation of the Book object.
         """
         return f"{self.title} by {self.author}"
+
 class EBook(Book): 
     def __init__(self, file_size):
         super().__init__(title, author)
@@ -18,7 +19,7 @@ class EBook(Book):
         Returns a human-readable string representation of the EBook object,
         including its file size.
         """
-        return f"{self.title} by {self.author}, File Size: {self.file_size}MB"
+        return f"{self.title} by {self.author}, File Size: {self.file_size}KB"
 
 class PrintBook(Book):
     def __init__(self, page_count):
