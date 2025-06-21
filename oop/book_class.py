@@ -15,7 +15,7 @@ class Book:
         print("my_book")
 
     def __del__(self):
-        print(f"Deleting book: {self.title}")
+        print(f"Deleting {self.title}")
     
 
 
