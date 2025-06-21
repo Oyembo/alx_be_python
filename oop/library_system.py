@@ -4,9 +4,6 @@ class Book:
         self.author = str(author)
 
     def __str__(self) -> str:
-        """
-        Returns a human-readable string representation of the Book object.
-        """
         return f"{self.title} by {self.author}"
 
 class EBook(Book): 
@@ -15,10 +12,6 @@ class EBook(Book):
         self.file_size = int(file_size)
 
     def __str__(self) -> str:
-        """
-        Returns a human-readable string representation of the EBook object,
-        including its file size.
-        """
         return f"{self.title} by {self.author}, File Size: {self.file_size}KB"
 
 class PrintBook(Book):
@@ -27,10 +20,6 @@ class PrintBook(Book):
         self.page_count = int(page_count)
 
     def __str__(self) -> str:
-        """
-        Returns a human-readable string representation of the PrintBook object,
-        including its page count.
-        """
         return f"{self.title} by {self.author}, Page Count: {self.page_count}"
 
 class Library:
@@ -38,8 +27,6 @@ class Library:
         self.books = []
 
     def add_book(self, book: Book):
-        """Adds a book (can be Book, EBook, or PrintBook) to the library's collection."""
-
         if isinstance(book, Book):
             self.books.append(book)
             print(f"Added '{book.title}' to the library.")
