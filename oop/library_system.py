@@ -24,6 +24,7 @@ class PrintBook(Book):
 class Library:
     def __init__(self):
         self.books = []
+
     def add_book(self, book: Book):
         if isinstance(book, Book):
             self.books.append(book)
@@ -31,7 +32,9 @@ class Library:
         else:
             print("Invalid item. Only Book instances can be added to the library.")  
     def list_books(self):
-        print(f"Books in {self.books}")
+        if not self.books:
+            print("The library is currently empty.")
+        
     
         
 
