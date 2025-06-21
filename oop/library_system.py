@@ -37,7 +37,13 @@ class Library:
         self.books = []
 
     def add_book(self, book: Book):
-        print(f"Added '{book.title}' to Library")
+        """Adds a book (can be Book, EBook, or PrintBook) to the library's collection."""
+
+        if isinstance(book, Book):
+            self.books.append(book)
+            print(f"Added '{book.title}' to the library.")
+        else:
+            print("Invalid item. Only Book instances can be added to the library.")
     
     def list_books(self):
         print(f"Books in {self.books}")
