@@ -18,21 +18,18 @@ class PrintBook(Book):
     def __init__(self, page_count):
         super().__init__(title, author)
         self.page_count = int(page_count)
-
     def __str__(self) -> str:
         return f"{self.title} by {self.author}, Page Count: {self.page_count}"
 
 class Library:
     def __init__(self):
         self.books = []
-
     def add_book(self, book: Book):
         if isinstance(book, Book):
             self.books.append(book)
             print(f"Added '{book.title}' to the library.")
         else:
-            print("Invalid item. Only Book instances can be added to the library.")
-    
+            print("Invalid item. Only Book instances can be added to the library.")  
     def list_books(self):
         print(f"Books in {self.books}")
     
