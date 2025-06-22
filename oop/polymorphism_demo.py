@@ -9,6 +9,7 @@ class Rectangle(Shape):
         self.width = width
         self.area = length * width
 
+import math.pi
 class Circle(Shape):
     def __init__(self, radius):
         super().__init__(area)
